@@ -30,6 +30,7 @@ public class Main extends JavaPlugin
         Main.pluginName = plugin.getDescription().getName();
         getCommand("avinfo").setExecutor(avinfo);
         
+        this.getServer().getPluginManager().registerEvents(new DevListener(), this);
         logger.info(String.format("[%s] Version: %s by %s has been Enabled!", getDescription().getName(), getDescription().getVersion(), getDescription().getAuthors()));
     }
     

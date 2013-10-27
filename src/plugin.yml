@@ -8,6 +8,13 @@ commands:
   avinfo:
     description: Info about the plugin.
     usage: /<command>
+  atl:
+    description: Activate the playerlistener
+    usage: /<command>
+    aliases: activatelistener
+  trail:
+    description: Trail!
+    usage: /<command> [off]
     
 permissions:
   avalanche.*:
@@ -15,7 +22,15 @@ permissions:
     default: false
     children:
       avalanche.avinfo: true
+      avalanche.atl: true
+      avalanche.trail: true
   avalanche.avinfo:
     description: avinfo.
+    default: true
+  avalanche.atl:
+    description: activate listener
+    default: false
+  avalanche.trail:
+    description: Trail
     default: true
 

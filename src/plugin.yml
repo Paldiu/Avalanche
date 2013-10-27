@@ -1,0 +1,21 @@
+name: Avalanche
+description: Fun plugin scripted by Paldiu and Freelix2000
+version: 1.00 ALPHA
+main: net.avalanche.Main
+authors: [Paldiu, freelix2000]
+
+commands:
+  avinfo:
+    description: Info about the plugin.
+    usage: /<command>
+    
+permissions:
+  avalanche.*:
+    description: Access to ALL commands.
+    default: false
+    children:
+      avalanche.avinfo: true
+  avalanche.avinfo:
+    description: avinfo.
+    default: true
+

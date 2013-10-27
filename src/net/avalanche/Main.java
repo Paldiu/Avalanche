@@ -16,6 +16,7 @@ public class Main extends JavaPlugin
     public static Main plugin;
     public static String pluginName = "";
     public static File pluginFile = null;
+    public static String NOT_FROM_CONSOLE = "This command can not be used from the console!";
     public static Server server;
     public static String commandPrefix = "Command_";
     public static final double version = 0.1;

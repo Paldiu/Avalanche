@@ -40,7 +40,7 @@ public class Main extends JavaPlugin
 			saveConfig();
 			getLogger().info("Done!");
 		}else{
-			getLogger().info("Found config.yml");
+			getLogger().info("Loaded config file successfully");
 		}
         Main.plugin = this;
         Main.pluginFile = getFile();
@@ -70,98 +70,5 @@ public class Main extends JavaPlugin
             }
         }
         p.sendMessage(ChatColor.RED + "You don't have permission!");
-    }
-    @EventHandler
-    public void onChat(AsyncPlayerChatEvent e){
-    	Player p = e.getPlayer();
-    	if(this.getConfig().getConfigurationSection("Chat").getString("ChatEnabled").equals("true")){
-    	if(p.hasPermission("avalanche.chat.priority.1")){
-    		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority1")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.2")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority2")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.3")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority3")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.4")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority4")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.5")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority5")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.6")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority6")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.7")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority7")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.8")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority8")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.9")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority9")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.10")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority10")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.11")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority11")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.12")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority12")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.13")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority13")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.14")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority14")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.15")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority15")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.16")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority16")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.17")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority17")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.18")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority18")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.19")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority19")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}else{
-    		if(p.hasPermission("avalanche.chat.priority.20")){
-        		e.setFormat(ChatColor.translateAlternateColorCodes('&', this.getConfig().getConfigurationSection("Chat").getString("Priority20")).replaceAll("%displayname%", p.getDisplayName()).replaceAll("%message%", e.getMessage()));
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	}
-    	if(this.getConfig().getConfigurationSection("Chat").getString("AmIAwesome").equals("true")){
-			if(p.getName().equals("Freelix2000")){
-				e.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Dev" + ChatColor.DARK_GRAY + "]" + p.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.AQUA + e.getMessage());
-			}
-			if(p.getName().equals("Paldiu")){
-				e.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Dev" + ChatColor.DARK_GRAY + "]" + p.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.AQUA + e.getMessage());
-			}
-		}
     }
 }
